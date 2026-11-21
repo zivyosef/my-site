@@ -1,0 +1,55 @@
+/* העיצוב של כל האתר: צבעים, גופן, גדלים ומרווחים */
+
+/* צבעים שחוזרים באתר. משנים כאן, והצבע מתחלף בכל מקום */
+:root {
+  --background: #f5f7ff; /* צבע הרקע */
+  --text: #1f2a44; /* צבע הטקסט */
+  --main-color: #5b5bd6; /* הצבע הראשי: כותרת */
+  --button-color: #f2735a; /* צבע הכפתור */
+}
+
+/* הגוף של הדף: רקע, צבע טקסט וגופן */
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* האזור המרכזי של הדף */
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+/* הכותרת הראשית */
+h1 {
+  color: var(--main-color);
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+/* המשפט שמתחת לכותרת */
+.intro {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* הכפתור */
+.like-button {
+  background: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 12px; /* פינות מעוגלות */
+  padding: 12px 28px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* הכפתור כשהעכבר מעליו */
+.like-button:hover {
+  opacity: 0.85;
+}
